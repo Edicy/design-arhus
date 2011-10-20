@@ -1,0 +1,12 @@
+.wrapper {
+	width: 960px
+}
+#content {
+	width: 650px
+}
+#sidebar {
+	width: 250px
+}
+#header-inner2 {
+	background: none
+}

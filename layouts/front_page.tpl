@@ -19,7 +19,7 @@
   <div id="content-wrap">
     <div class="wrapper">
       <h1 id="site-logo">{% editable site.header %}</h1>
-      <div id="intro">{% content name="slogan" %}</div>
+      <div id="intro" class="clear">{% content name="slogan" %}</div>
       <div id="content-block" class="clear">{% content %}</div>
       <!-- //content-block -->
     </div>

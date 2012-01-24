@@ -327,7 +327,7 @@ h3 {
 	background: none;
 	outline: none;
 	width: 135px;
-        -webkit-appearance:none 
+    -webkit-appearance:none 
 }
 .search-submit {
 	background: url('../images/loop.png?1') no-repeat center 6px;
@@ -335,17 +335,19 @@ h3 {
 	width: 30px;
 }
 /* comment form */
+.form_field {
+    color: #5e5e5e;    
+}
 .form_field label {
 	display: block;
 	line-height: 24px;
-	color: #5e5e5e;
-	font-size: 13px
+	font-size: 13px;
+    color: #262626
 }
 .form_field {
 	margin-bottom: 6px;
 }
 .form_field_textfield, .form_field_textarea {
-	font-family: Helvetica, Arial, Verdana, sans-serif;
 	background: #fff;
 	border-color: #a9a9a9 #d7dde0 #d7dde0 #a9a9a9;
 	border-style: solid;
@@ -353,6 +355,16 @@ h3 {
 	font-size: 13px;
 	padding: 5px 4px;
 	width: 165px
+}
+input, select, textarea {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
+    color: #333
+}
+select {
+    padding: 1px 0
+}
+.form_field_radio, .form_field_checkbox {
+    margin: 0 6px 0 0;
 }
 .form_field_textfield {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(1, #fff), color-stop(0.7, #fff), color-stop(0, #f2f2f2));
@@ -390,6 +402,9 @@ h3 {
 .form_error, .form_field_error, .blog-errors {
 	color: #ea0e0e
 }
+.form_field_with_errors input {
+    border-color: #ea0e0e
+}
 .form_field_size_small {
 	width: 130px
 }
@@ -406,6 +421,28 @@ h3 {
   position: absolute;
   right: -54px;
   top: -2px
+}
+.placeholder { color: #8b8b8b !important }
+::-webkit-input-placeholder { color: #8b8b8b !important }
+:-moz-placeholder { color: #8b8b8b !important }
+.edys-search-popup {
+    background: #6b727a;
+    background: rgba(99, 106, 114, .9);
+    color: #fff;
+    text-shadow: none
+}
+.edys-search-fin {
+    border-color: #6b727a;
+    border-color: rgba(99, 106, 114, .9)    
+}
+.edys-search-popup .gs-title, .edys-search-popup .gsc-cursor-box {
+    color: #fff
+}
+.edys-search-popup .gsc-cursor-page:hover, .edys-search-popup .gsc-cursor-current-page {
+    color: #2d2d2d
+}
+.edys-search-popup .gsc-cursor-box {
+    border-top: 1px solid #575d64
 }
 @media screen and (max-width: 960px) {
  .wrapper {
@@ -523,7 +560,7 @@ background: none;
 }
 }
 textarea, input {outline:none;}
-html {  -webkit-text-size-adjust: none;	}
+html { -webkit-text-size-adjust: none;	}
 img {
   max-width: 100%;
   height: auto;

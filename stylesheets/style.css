@@ -422,9 +422,6 @@ select {
   right: -54px;
   top: -2px
 }
-.placeholder { color: #8b8b8b !important }
-::-webkit-input-placeholder { color: #8b8b8b !important }
-:-moz-placeholder { color: #8b8b8b !important }
 .edys-search-popup {
     background: #6b727a;
     background: rgba(99, 106, 114, .9);

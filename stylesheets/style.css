@@ -157,6 +157,27 @@ h3 {
 	-webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 	-moz-box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 }
+
+/* Editable content image */
+.edy-positionable-container-left {
+  margin-right: 15px;
+}
+.edy-positionable-container-right {
+  margin-left: 15px;
+}
+.edy-image-container-with-title:after {
+  display: block;
+  padding: 4px;
+  font-size: 10px;
+  line-height: 1.3em;
+  content: attr(data-title);
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
 #content-wrap ol {padding-left: 40px}
 #content-wrap li {
 	background: url('../images/bullet.gif?1') no-repeat left 8px;

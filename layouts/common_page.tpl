@@ -25,13 +25,13 @@
         <h1>{% content name="heading" %}</h1>
       </div>
       <div id="divider" class="clear">
-        <div id="content">
+        <div id="content" data-search-indexing-allowed="true">
          {% content %}
         </div>
         <!-- //content -->
         <div id="sidebar">
          {% include "Submenu" %}
-         {% content name="sidebar" %}
+         <div data-search-indexing-allowed="true">{% content name="sidebar" %}</div>
         </div>
         <!-- //sidebar -->
       </div>

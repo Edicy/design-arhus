@@ -20,8 +20,8 @@
   <div id="content-wrap">
     <div class="wrapper">
       <h1 id="site-logo">{% editable site.header %}</h1>
-      <div id="intro" class="clear">{% content name="slogan" %}</div>
-      <div id="content-block" class="clear">{% content %}</div>
+      <div id="intro" class="clear" data-search-indexing-allowed="true">{% content name="slogan" %}</div>
+      <div id="content-block" class="clear" data-search-indexing-allowed="true">{% content %}</div>
       <!-- //content-block -->
     </div>
     <!-- //wrapper -->

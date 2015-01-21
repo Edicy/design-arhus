@@ -27,10 +27,10 @@
       </div>
       <div id="divider" class="clear">
         <div id="content">
-           <div class="excerpt">
+           <div class="excerpt" data-search-indexing-allowed="true">
             {% editable article.excerpt %}
             </div>
-            {% editable article.body %}
+            <div data-search-indexing-allowed="true">{% editable article.body %}</div>
             
             {% if editmode %}
                 <div class="cfx article-tags">
@@ -92,7 +92,7 @@
         <!-- //content -->
         <div id="sidebar">
          {% include "Submenu" %}
-         {% content name="sidebar" %}
+         <div data-search-indexing-allowed="true">{% content name="sidebar" %}</div>
         </div>
         <!-- //sidebar -->
       </div>

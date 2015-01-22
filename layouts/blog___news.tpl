@@ -38,7 +38,7 @@
                 </div>
             {% endif %}
         
-         {% if editmode %}<p>{% addbutton class="add-article" %}</p>{% endif %}
+         {% if editmode %}{% addbutton class="add-article" %}{% endif %}
          <ul id="bloglist">{% for article in articles %}
            <li>
              <h2><a href="{{article.url}}">{{article.title}}</a> <span class="date">{{article.created_at | format_date:"short"}}</span></h2>

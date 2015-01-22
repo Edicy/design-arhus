@@ -258,6 +258,11 @@ h3 {
 	color: #2170C1 !important
 }
 /* bloglist */
+.add-article {
+	display: block;
+	margin-bottom: 20px;
+}
+
 #bloglist {
 	margin: 0
 }

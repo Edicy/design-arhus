@@ -24,7 +24,7 @@
       <div id="heading">
         <h1>{% content name="heading" %}</h1>
       </div>
-      <div id="divider" class="clear">
+      <div id="divider" class="clear content-hyphenate">
         <div id="content" data-search-indexing-allowed="true">
          {% content %}
         </div>

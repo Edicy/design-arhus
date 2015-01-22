@@ -40,7 +40,7 @@
         
          {% if editmode %}{% addbutton class="add-article" %}{% endif %}
          <ul id="bloglist">{% for article in articles %}
-           <li>
+           <li class="content-hyphenate">
              <h2><a href="{{article.url}}">{{article.title}}</a> <span class="date">{{article.created_at | format_date:"short"}}</span></h2>
              <p class="meta"><span>{{article.author.name}}</span> / <a href="{{article.url}}#comments">{% case article.comments_count %}{% when 0 %}{{"Write_first_comment" | lc}}{% else %}{{"comments" | lc}} ({{article.comments_count}}){% endcase %}</a></p>
              {{article.excerpt}}

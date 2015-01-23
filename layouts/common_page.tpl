@@ -4,7 +4,7 @@
 {% include "SiteHeader" %}
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="content-hyphenate">
   <div id="header">
     <div id="header-inner">
      <div id="header-inner2">
@@ -24,7 +24,7 @@
       <div id="heading">
         <h1>{% content name="heading" %}</h1>
       </div>
-      <div id="divider" class="clear content-hyphenate">
+      <div id="divider" class="clear">
         <div id="content" data-search-indexing-allowed="true">
          {% content %}
         </div>

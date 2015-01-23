@@ -5,7 +5,7 @@
 {{blog.rss_link}}
 </head>
 <body>
-<div id="wrap">
+<div id="wrap" class="content-hyphenate">
   <div id="header">
     <div id="header-inner">
      <div id="header-inner2">
@@ -27,10 +27,10 @@
       </div>
       <div id="divider" class="clear">
         <div id="content">
-           <div class="excerpt content-hyphenate" data-search-indexing-allowed="true">
+           <div class="excerpt" data-search-indexing-allowed="true">
             {% editable article.excerpt %}
             </div>
-            <div class="content-hyphenate" data-search-indexing-allowed="true">{% editable article.body %}</div>
+            <div data-search-indexing-allowed="true">{% editable article.body %}</div>
             
             {% if editmode %}
                 <div class="cfx article-tags">
@@ -49,7 +49,7 @@
             {% endif %}
             
             
-           <div id="comments" class="content-hyphenate">
+           <div id="comments">
             <h3>{% case article.comments_count %}{% when 0 %}{{"no_comments"|lc}}{% else %}{{"comments_for_count"|lc}}: <span class="edy-site-blog-comments-count">{{article.comments_count}}</span>{% endcase %}</h3>
             <ul>
             {% for comment in article.comments %}
